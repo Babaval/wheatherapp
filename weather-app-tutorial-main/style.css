@@ -1,0 +1,108 @@
+/* Body Styling */
+body {
+  background-image: url('./wheather1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+/* Weather Card Styling */
+.card {
+  background: rgba(0, 0, 0, 0.75); /* Transparent black background */
+  padding: 1.5em;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+}
+
+/* Search Bar Styling */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 0.6em 1em;
+  border: 2px solid #ffffffa0;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.9em;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6em;
+  cursor: pointer;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Weather Details Styling */
+.weather h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+.weather .temp {
+  font-size: 2.8em;
+  font-weight: bold;
+  margin: 0.3em 0;
+  color: #ffc107; /* Vibrant yellow for temperature */
+}
+
+.weather .description {
+  font-size: 1em;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 0.8em;
+}
+
+.weather .humidity,
+.weather .wind {
+  font-size: 0.9em;
+  margin: 0.2em 0;
+}
+
+/* Icon Styling */
+.weather .icon {
+  width: 80px;
+  height: 80px;
+  margin: 0.5em auto;
+  display: block;
+}
+
+/* Add transitions */
+.card,
+.search-bar,
+button {
+  transition: all 0.3s ease-in-out;
+}
